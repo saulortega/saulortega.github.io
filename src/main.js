@@ -11,10 +11,10 @@ new Vue({
   vuetify,
 	render: h => h(App),
 	data: () => ({
-    idioma: 'es'
+    //idioma: ''
   }),
 	created: function () {
-		//
+		//this.detectarIdioma()
 	},
 	methods: {
 		/*intersección: function (A, B) {

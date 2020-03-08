@@ -24,5 +24,20 @@
   "browserslist": [
     "> 1%",
     "last 2 versions"
-  ]
+  ],
+  "description": "## Project setup ``` npm install ```",
+  "main": "babel.config.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/saulortega/saulortega.github.io.git"
+  },
+  "author": "Saúl Ortega",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/saulortega/saulortega.github.io/issues"
+  },
+  "homepage": "https://github.com/saulortega/saulortega.github.io#readme"
 }

@@ -3,7 +3,8 @@
 
 
 			<br>
-			<h1 class="text-center font-weight-light">Mis habilidades</h1>
+			<h1 v-if="idioma === 'es'" lang="es" class="text-center font-weight-light">Mis habilidades</h1>
+			<h1 v-if="idioma === 'en'" lang="en" class="text-center font-weight-light">My Abilities</h1>
 			<br>
 
 			<!--<v-row justify="center">-->
@@ -73,7 +74,7 @@
 					dense
 					class="mx-3"
 				>
-					<v-list-item-title><v-icon>{{ c.icono }}</v-icon> {{ c.nombre.es }}</v-list-item-title>
+					<v-list-item-title><v-icon>{{ c.icono }}</v-icon> {{ idioma === 'es' ? c.nombre.es : c.nombre.en }}</v-list-item-title>
 
 					<v-rating
 						:value="c.evaluación"
@@ -94,7 +95,6 @@
 <script>
 export default {
 	data: () => ({
-		//idioma: 'es',
 		/*conocimientosSeleccionados: ['DW_ME', 'DW_P', 'DW_EI',],
 		items: [
 			{
