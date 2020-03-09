@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/precache-manifest.f8af3eb458f96d91b7c8830254ec184c.js"
+  "/precache-manifest.d4323ca90b19a300ada8ef5c488afad2.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "saulortega.github.io"});
