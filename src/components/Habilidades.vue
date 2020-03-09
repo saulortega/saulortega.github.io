@@ -3,8 +3,8 @@
 
 
 			<br>
-			<h1 v-if="idioma === 'es'" lang="es" class="text-center font-weight-light">Mis habilidades</h1>
-			<h1 v-if="idioma === 'en'" lang="en" class="text-center font-weight-light">My Abilities</h1>
+			<h1 v-if="idioma === 'es'" lang="es" class="text-center font-weight-light">Habilidades</h1>
+			<h1 v-if="idioma === 'en'" lang="en" class="text-center font-weight-light">Abilities</h1>
 			<br>
 
 			<!--<v-row justify="center">-->

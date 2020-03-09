@@ -28,9 +28,16 @@
 				</v-col>
 			</v-row>
 			<!--<hr>-->
+			<v-divider></v-divider>
 			<v-row v-show="idioma">
 				<v-col>
-					<Desarrollador :idioma="idioma" class="com"></Desarrollador>
+					<Habilidades :idioma="idioma" class="com"></Habilidades>
+				</v-col>
+			</v-row>
+			<v-divider></v-divider>
+			<v-row v-show="idioma">
+				<v-col>
+					<Experiencia :idioma="idioma" class="com"></Experiencia>
 				</v-col>
 			</v-row>
     </v-container>
@@ -39,18 +46,18 @@
 
 <script>
 import Introduccion from './components/Introduccion';
-import Desarrollador from './components/Desarrollador';
+import Habilidades from './components/Habilidades';
+import Experiencia from './components/Experiencia';
 
-// Por aquí voy, pendiente agregar inglés, con etiquetas de idioma
-
-// Más pendientes: Revisar si agregar portafolio o experiencia o algo más. Agregar cosas semánticas.
+// Pendientes: Revisar si agregar portafolio y un pie de página o algo más.
 
 export default {
   name: 'App',
 
   components: {
 		Introduccion,
-		Desarrollador
+		Habilidades,
+		Experiencia
   },
   data: () => ({
 		idioma: '',
@@ -105,7 +112,7 @@ export default {
 }
 
 .com {
-	margin-bottom: 30px;
+	margin-bottom: 50px;
 	display: inline-block;
 }
 

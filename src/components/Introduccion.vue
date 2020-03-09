@@ -7,7 +7,7 @@
 
 			<p v-if="idioma === 'es'" lang="es" class="grey--text text--darken-1 subtitle-1" itemprop="description">Soy desarrollador de software especializado en Vue para entornos web, y en Go del lado del servidor. Desarrollo aplicaciones web con estándares de la W3C como Websockets, Web storage, o IndexedDB para crear aplicaciones en tiempo real y con funcionalidad sin conexión a internet. Me gusta construir APIs, desarrollar cosas desde cero, y obtener nuevos retos.</p>
 			<p v-if="idioma === 'es'" lang="es" class="grey--text text--darken-2 body-2 font-italic">
-				<strong>Ubicación:</strong>
+				<strong>Ubicación: </strong>
 				<span itemprop="homeLocation" itemscope itemtype="http://schema.org/Place">
 					<span itemscope itemtype="http://schema.org/City"><span itemprop="name">Bogotá</span></span>,
 					<span itemscope itemtype="http://schema.org/Country"><span itemprop="name">Colombia</span></span>
@@ -19,7 +19,7 @@
 
 			<p v-if="idioma === 'en'" lang="en" class="grey--text text--darken-1 subtitle-1" itemprop="description">I'm a software developer specializing in Vue for web environments, and in Go at server-side. I develop web applications with W3C standards such as Websockets, Web storage, or IndexedDB in order to create realtime and offline web applications. I like to build APIs, develop things from scratch, and get new challenges.</p>
 			<p v-if="idioma === 'en'" lang="en" class="grey--text text--darken-2 body-2 font-italic">
-				<strong>Location:</strong>
+				<strong>Location: </strong>
 				<span itemprop="homeLocation" itemscope itemtype="http://schema.org/Place">
 					<span itemscope itemtype="http://schema.org/City"><span itemprop="name">Bogotá</span></span>,
 					<span itemscope itemtype="http://schema.org/Country"><span itemprop="name">Colombia</span></span>
@@ -77,6 +77,11 @@ export default {
 .v-icon.mdi-linkedin:hover {
 	color: #0077b5;
 	border-color: #0077b5;
+}
+
+.v-icon.mdi-git:hover {
+	color: black;
+	border-color: black;
 }
 
 </style>
