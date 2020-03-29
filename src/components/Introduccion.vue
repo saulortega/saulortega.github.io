@@ -2,7 +2,7 @@
 	<div>
 
 		<div class="presentacion" itemscope itemtype="http://schema.org/Person">
-			<img src="@/assets/yo.png" class="foto" itemprop="image">
+			<img src="/img/yo.png" class="foto" itemprop="image">
 			<h1 class="font-weight-light grey--text text--darken-3" itemprop="name"><span itemprop="givenName">Saúl</span> <span itemprop="familyName">Ortega</span></h1>
 
 			<p v-if="idioma === 'es'" lang="es" class="grey--text text--darken-1 subtitle-1" itemprop="description">Soy desarrollador de software especializado en Vue para entornos web, y en Go del lado del servidor. Desarrollo aplicaciones web con estándares de la W3C como Websockets, Web storage, o IndexedDB para crear aplicaciones en tiempo real y con funcionalidad sin conexión a internet. Me gusta construir APIs, desarrollar cosas desde cero, y obtener nuevos retos.</p>
