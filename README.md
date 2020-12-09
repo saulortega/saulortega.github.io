@@ -23,6 +23,6 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 https://stackoverflow.com/questions/2668886/git-copy-all-files-in-a-directory-from-another-branch/23047799
 https://stackoverflow.com/questions/17416691/how-can-i-copy-files-from-a-branch-to-another-using-git
 
-`git checkout master`
-`git checkout fuente dist`
-Y después hay que mover el contenido de dist a la raíz...
+Mover el contenido de `dist` en rama `fuenta` a la raíz de la rama `master`:
+
+`git checkout master ; git checkout fuente dist ; rm *.js ; rm -r css ; rm -r en ; rm -r img ; rm -r js ; mv dist/* ./ ; rmdir dist`
