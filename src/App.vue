@@ -37,6 +37,12 @@
 			<v-divider></v-divider>
 			<v-row v-show="idioma">
 				<v-col>
+					<Proyectos :idioma="idioma" class="com"></Proyectos>
+				</v-col>
+			</v-row>
+			<v-divider></v-divider>
+			<v-row v-show="idioma">
+				<v-col>
 					<Experiencia :idioma="idioma" class="com"></Experiencia>
 				</v-col>
 			</v-row>
@@ -47,6 +53,7 @@
 <script>
 import Introduccion from './components/Introduccion';
 import Habilidades from './components/Habilidades';
+import Proyectos from './components/Proyectos';
 import Experiencia from './components/Experiencia';
 
 // Pendientes: Revisar si agregar portafolio y un pie de página o algo más.
@@ -57,6 +64,7 @@ export default {
   components: {
 		Introduccion,
 		Habilidades,
+		Proyectos,
 		Experiencia
   },
   data: () => ({

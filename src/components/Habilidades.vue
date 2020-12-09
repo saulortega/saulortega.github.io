@@ -7,67 +7,6 @@
 			<h1 v-if="idioma === 'en'" lang="en" class="text-center font-weight-light">Abilities</h1>
 			<br>
 
-			<!--<v-row justify="center">-->
-
-      	<!--<v-col cols="12" lg="4" md="5" sm="6">
-        	<v-card-text>
-						<v-treeview
-							selectable
-							open-on-click
-							selected-color="indigo"	
-							:open="['DW']"
-							:items="items"
-							v-model="conocimientosSeleccionados"
-						></v-treeview>
-        	</v-card-text>
-      	</v-col>-->
-
-			<!--<v-divider vertical></v-divider>-->
-
-      	<!--<v-col
-					cols="12"
-					lg="4"
-					md="5"
-					sm="6"
-				>
-        	<v-card-text ssssssssssss_style="max-width:30em;">
-
-						<v-list class="transparent">
-							<v-list-item
-								v-for="(c, i) in conocimientos" :key="i"
-								vvvvvvvvvvv-show="c.visible"
-								dense
-								class="cncmnto"
-								style="border-bottom: 1px solid #EEEEEE"
-							>
-								<v-list-item-title><v-icon>{{ c.icono }}</v-icon> {{ c.nombre.es }}</v-list-item-title>
-
-								<v-rating
-									:value="c.evaluación"
-									color="amber"
-									background-color="grey"
-									dense
-									half-increments
-									readonly
-									size="14"
-									class="text-right"
-								></v-rating>
-							</v-list-item>
-						</v-list>
-        	</v-card-text>
-      	</v-col>-->
-
-				<!--<v-col
-					cols="12"
-					lg="4"
-					md="5"
-					sm="6"
-				>
-				</v-col>-->
-
-			<!--</v-row>-->
-
-
 			<div class="d-flex flex-wrap justify-space-between">
 				<v-list-item
 					v-for="(c, i) in conocimientos" :key="i"
@@ -95,35 +34,6 @@
 <script>
 export default {
 	data: () => ({
-		/*conocimientosSeleccionados: ['DW_ME', 'DW_P', 'DW_EI',],
-		items: [
-			{
-				id: 'DW',
-				name: 'Web development',
-				nombre: 'Desarrollo web',
-				children: [
-					{ id: 'DW_ME', name: 'Layout and style', nombre: 'Maquetado y estilo' },
-					{ id: 'DW_P', name: 'Programming', nombre: 'Programación' },
-					{ id: 'DW_IU', name: 'Utils and integrations', nombre: 'Integraciones y utilidades' },
-					{ id: 'DW_EI', name: 'Industry standards', nombre: 'Estándares de la industria' },
-					{ id: 'DW_HS', name: 'Tools and services', nombre: 'Herramientas y servicios' },
-				],
-			},
-			{
-				id: 'LP',
-				name: 'Programming languages',
-				nombre: 'Lenguajes de programación',
-			},
-			{
-				id: 'BD',
-				name: 'Databases',
-				nombre: 'Bases de datos',
-				children: [
-					{ id: 'BD_SQL', name: 'SQL' },
-					{ id: 'BD_NoSQL', name: 'NoSQL' },
-				],
-			},
-		],*/
 		conocimientos: [
 			{
 				visible: false,
@@ -205,26 +115,6 @@ export default {
 				evaluación: 5,
 				categorías: ['DW_P']
 			},
-			/*{
-				visible: false,
-				nombre: {
-					es: 'Bootstrap',
-					en: 'Bootstrap'
-				},
-				icono: 'mdi-bootstrap',
-				evaluación: 5,
-				categorías: ['DW_ME']
-			},
-			{
-				visible: false,
-				nombre: {
-					es: 'Foundation',
-					en: 'Foundation'
-				},
-				icono: 'mdi-language-css3',
-				evaluación: 4,
-				categorías: ['DW_ME']
-			},*/
 			{
 				visible: false,
 				nombre: {
@@ -385,41 +275,51 @@ export default {
 				evaluación: 3.5,
 				categorías: ['BD_NoSQL']
 			},
-			/*{
+			{
 				visible: false,
 				nombre: {
-					es: 'AWS',
-					en: 'AWS'
+					es: 'AWS Lambda',
+					en: 'AWS Lambda'
 				},
 				icono: 'mdi-aws',
-				evaluación: 2.5,
-				categorías: ['DW_HS']
-			},*/
+				evaluación: 4.5,
+				categorías: ['DW_P']
+			},
+			{
+				visible: false,
+				nombre: {
+					es: 'AWS Dynamo',
+					en: 'AWS Dynamo'
+				},
+				icono: 'mdi-aws',
+				evaluación: 4,
+				categorías: ['BD_NoSQL']
+			},
+			{
+				visible: false,
+				nombre: {
+					es: 'AWS Cognito',
+					en: 'AWS Cognito'
+				},
+				icono: 'mdi-aws',
+				evaluación: 3.5,
+				categorías: ['DW_IU']
+			},
+			{
+				visible: false,
+				nombre: {
+					es: 'AWS API Gateway',
+					en: 'AWS API Gateway'
+				},
+				icono: 'mdi-aws',
+				evaluación: 3.5,
+				categorías: ['DW_P']
+			},
 		]
 	}),
 	props: ['idioma'],
-	watch: {
-		/*'conocimientosSeleccionados': {
-			handler: function (cncmnts) {
-				console.log('ssssss', cncmnts)
-				this.actualizarConocimientosVisibles()
-			},
-			deep: true
-		}*/
-	},
-	created: function() {
-		//this.actualizarConocimientosVisibles()
-	},
 	methods: {
-		/*actualizarConocimientosVisibles: function() {
-			for (let i in this.conocimientos) {
-				if (this.$root.intersección(this.conocimientosSeleccionados, this.conocimientos[i].categorías).length > 0) {
-					this.conocimientos[i].visible = true
-				} else {
-					this.conocimientos[i].visible = false
-				}
-			}
-		}*/
+		//
 	}
 }
 </script>

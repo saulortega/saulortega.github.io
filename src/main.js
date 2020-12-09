@@ -17,14 +17,7 @@ new Vue({
 		//this.detectarIdioma()
 	},
 	methods: {
-		/*intersección: function (A, B) {
-			A = A || []
-			B = B || []
-
-			return A.filter( (v) => {
-				return B.indexOf(v) != -1
-			})
-		}*/
+		//
 	}
 }).$mount('#app')
 
